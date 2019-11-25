@@ -78,13 +78,13 @@ class SignupViewController: UIViewController {
         }
         else
         {
-            let firstName = firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
             
-            Auth.auth().createUser(withEmail: email!, password: password!) { (results, err) in
+            Auth.auth().createUser(withEmail: email, password: password) { (results, err) in
                 
                 if err != nil
                 {
@@ -95,12 +95,12 @@ class SignupViewController: UIViewController {
                 {
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname": firstName!, "lastname": lastName!, "uid": results!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["firstname": firstName, "lastname": lastName, "uid": results!.user.uid]) { (error) in
                         if error != nil {
                             self.showError(message: "Couldnt save data")
                         }
                     }
-                     //if succes
+                     //if success
                     self.transitionToGameVC()
                 }
             }
@@ -117,6 +117,8 @@ class SignupViewController: UIViewController {
     
         if #available(iOS 13.0, *) {
             let gameVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.gameViewController) as? GameViewController
+                view.window?.rootViewController = gameVC
+                view.window?.makeKeyAndVisible()
         } else {
             // Fallback on earlier versions
         }
