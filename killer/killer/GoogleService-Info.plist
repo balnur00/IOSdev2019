@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>718690160511-ohh44945n94i9tm0j6hc0n61gtsajoa7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.718690160511-ohh44945n94i9tm0j6hc0n61gtsajoa7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADVsK90GMmRUaxvAFz52ogrQUEzxrQYRM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>718690160511</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>s.killer</string>
+	<key>PROJECT_ID</key>
+	<string>killerapp-e41d3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>killerapp-e41d3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:718690160511:ios:6873da878b96822e39544a</string>
+	<key>DATABASE_URL</key>
+	<string>https://killerapp-e41d3.firebaseio.com</string>
+</dict>
+</plist>

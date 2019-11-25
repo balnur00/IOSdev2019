@@ -1,0 +1,6 @@
+framework module Pods_killer_killerUITests {
+  umbrella header "Pods-killer-killerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
