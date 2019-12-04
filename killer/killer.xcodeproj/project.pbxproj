@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D7B95E26F2F77FF09365D8D /* Pods_killer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CF72F38A1EEE6D846082B2 /* Pods_killer.framework */; };
 		66F68F8A53A98F0CFE29C7BA /* Pods_killer_killerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C0810EA6509AF7CA6F71DC /* Pods_killer_killerUITests.framework */; };
+		A605F12A238FC91E0066E329 /* theboldfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A605F129238FC91E0066E329 /* theboldfont.ttf */; };
 		A6312FA6237A83F300004D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6312FA5237A83F300004D0D /* AppDelegate.swift */; };
 		A6312FA8237A83F300004D0D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6312FA7237A83F300004D0D /* GameScene.sks */; };
 		A6312FAA237A83F300004D0D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6312FA9237A83F300004D0D /* Actions.sks */; };
@@ -53,6 +54,7 @@
 		776BB69370D81770C57AF47B /* Pods-killerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-killerTests.release.xcconfig"; path = "Target Support Files/Pods-killerTests/Pods-killerTests.release.xcconfig"; sourceTree = "<group>"; };
 		83CF72F38A1EEE6D846082B2 /* Pods_killer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_killer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90101E2535C5E0106C2B176A /* Pods-killer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-killer.debug.xcconfig"; path = "Target Support Files/Pods-killer/Pods-killer.debug.xcconfig"; sourceTree = "<group>"; };
+		A605F129238FC91E0066E329 /* theboldfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theboldfont.ttf; sourceTree = "<group>"; };
 		A6312FA2237A83F300004D0D /* killer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = killer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6312FA5237A83F300004D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6312FA7237A83F300004D0D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A6312FD9237C321000004D0D /* bulletSound.mp3 */,
+				A605F129238FC91E0066E329 /* theboldfont.ttf */,
 				A6312FA5237A83F300004D0D /* AppDelegate.swift */,
 				A6312FA7237A83F300004D0D /* GameScene.sks */,
 				A6312FAB237A83F300004D0D /*  GameScene.swift */,
@@ -326,6 +329,7 @@
 				A6312FA8237A83F300004D0D /* GameScene.sks in Resources */,
 				A6312FDA237C321000004D0D /* bulletSound.mp3 in Resources */,
 				A6312FB3237A83F500004D0D /* Assets.xcassets in Resources */,
+				A605F12A238FC91E0066E329 /* theboldfont.ttf in Resources */,
 				A6312FB6237A83F500004D0D /* LaunchScreen.storyboard in Resources */,
 				A6312FAA237A83F300004D0D /* Actions.sks in Resources */,
 				C22DACB4238BAEA800710CEB /* GoogleService-Info.plist in Resources */,
