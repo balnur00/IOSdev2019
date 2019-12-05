@@ -11,5 +11,8 @@ import Foundation
 struct Constants {
     struct Storyboard {
         static let  gameViewController = "GameVC"
+        static let  gameOverViewController = "GameOverVC"
     }
 }
+
+

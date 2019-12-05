@@ -21,6 +21,7 @@
 		A6312FC1237A83F600004D0D /* killerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6312FC0237A83F600004D0D /* killerTests.swift */; };
 		A6312FCC237A83F600004D0D /* killerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6312FCB237A83F600004D0D /* killerUITests.swift */; };
 		A6312FDA237C321000004D0D /* bulletSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6312FD9237C321000004D0D /* bulletSound.mp3 */; };
+		C20AF17223991DC500A08F0A /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20AF17123991DC500A08F0A /* GameOverViewController.swift */; };
 		C22DACAE238BA90100710CEB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DACAD238BA90100710CEB /* Utilities.swift */; };
 		C22DACB2238BAB9200710CEB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DACB1238BAB9200710CEB /* RootViewController.swift */; };
 		C22DACB4238BAEA800710CEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C22DACB3238BAEA800710CEB /* GoogleService-Info.plist */; };
@@ -73,6 +74,7 @@
 		A6312FCD237A83F600004D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6312FD9237C321000004D0D /* bulletSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bulletSound.mp3; sourceTree = "<group>"; };
 		A8886864E4F8B94F00A5D9CA /* Pods-killer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-killer.release.xcconfig"; path = "Target Support Files/Pods-killer/Pods-killer.release.xcconfig"; sourceTree = "<group>"; };
+		C20AF17123991DC500A08F0A /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		C22DACAD238BA90100710CEB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ../../../Utilities.swift; sourceTree = "<group>"; };
 		C22DACB0238BA98500710CEB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C22DACB1238BAB9200710CEB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				C256CF0C238AE2B100B6C5EE /* LoginViewController.swift */,
 				C256CF0E238AE2C600B6C5EE /* SignupViewController.swift */,
 				C22DACB1238BAB9200710CEB /* RootViewController.swift */,
+				C20AF17123991DC500A08F0A /* GameOverViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				A6312F9F237A83F300004D0D /* Frameworks */,
 				A6312FA0237A83F300004D0D /* Resources */,
 				B22AC6FCF438127EE18DA62B /* [CP] Embed Pods Frameworks */,
+				C20AF17723992B2700A08F0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -453,6 +457,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-killer-killerUITests/Pods-killer-killerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C20AF17723992B2700A08F0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,6 +489,7 @@
 				A6312FAE237A83F300004D0D /* GameViewController.swift in Sources */,
 				A6312FA6237A83F300004D0D /* AppDelegate.swift in Sources */,
 				C2E25B2D238C059E0079FC55 /* Constants.swift in Sources */,
+				C20AF17223991DC500A08F0A /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +664,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3F2D5Y7577;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/killer",
+				);
 				INFOPLIST_FILE = killer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,6 +689,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3F2D5Y7577;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/killer",
+				);
 				INFOPLIST_FILE = killer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,6 +758,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = killerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -744,6 +779,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = killerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

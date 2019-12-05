@@ -10,6 +10,8 @@ target 'killer' do
     pod 'Firebase/Auth'
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
+    pod 'Fabric'
+    pod 'Crashlytics'
 
 
   target 'killerTests' do

@@ -21,6 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let livesLabel = SKLabelNode(fontNamed: "the bold font")
     
     let player = SKSpriteNode(imageNamed: "kazah")
+    let gameOver = SKSpriteNode(imageNamed: "gamover")
     
     let bulletSound = SKAction.playSoundFileNamed("bulletSound.mp3", waitForCompletion: false)
     

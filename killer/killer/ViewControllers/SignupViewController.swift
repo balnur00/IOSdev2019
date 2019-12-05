@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Crashlytics
 
 class SignupViewController: UIViewController {
 
@@ -29,7 +30,8 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // testing crashlitics
+        // Crashlytics.sharedInstance().crash()
         setUpElements()
     }
     func setUpElements() {
